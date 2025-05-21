@@ -17,7 +17,7 @@ AZTEC_DIR="$HOME/aztec-sequencer"
 clear
 echo -e "${BLUE}${BOLD}"
 echo "╔══════════════════════════════════════════════════════════════╗"
-echo "║                  🚀 FZ AMIR • AZTEC NODE TOOL                ║"
+echo "║                  🚀  AZTEC NODE TOOL                         "
 echo "╚══════════════════════════════════════════════════════════════╝"
 echo -e "${RESET}"
 
@@ -45,7 +45,7 @@ elif [[ "$CHOICE" == "2" ]]; then
 fi
 
 # --- Option 1: Full Install ---
-IMAGE_TAG="0.85.0-alpha-testnet.8"
+IMAGE_TAG="0.85.0-alpha-testnet.11"
 SERVER_IP=$(curl -s https://ipinfo.io/ip || echo "127.0.0.1")
 echo -e "📱 ${YELLOW}Detected server IP: ${GREEN}${BOLD}$SERVER_IP${RESET}"
 read -p "🌐 Use this IP? (y/n): " use_detected_ip
