@@ -43,14 +43,14 @@ Deploy and manage an **Aztec Sequencer Validator Node** on **Ubuntu 20.04/22.04*
 Paste this into your terminal:
 
 ```bash
-bash <(curl -s https://raw.githubusercontent.com/fzaamir/aztec-validator-auto-setup/main/install.sh)
+bash <(curl -s https://raw.githubusercontent.com/aztexx/aztec-validator-auto-setup/main/install.sh)
 ```
 
 ---
 
 ## 🧠 During Setup, You'll Provide:
 
-* Ethereum private key (without `0x`)
+* Ethereum private key
 * Ethereum public address (starts with `0x`)
 * Sepolia RPC & Beacon endpoints
 * Custom ports (optional)
@@ -86,10 +86,4 @@ Clear state and re-run node:
 rm -rf /home/my-node/node
 docker compose up -d
 ```
-
----
-
-## 🙋 Support
-
-For help, visit the [Aztec Discord](https://discord.gg/aztecprotocol) and ask in the [`#operators` ](https://discord.com/channels/1144692727120937080/1367196595866828982) channel.
 
