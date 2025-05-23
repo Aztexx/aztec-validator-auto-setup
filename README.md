@@ -27,7 +27,7 @@ Deploy and manage an **Aztec Sequencer Validator Node** on **Ubuntu 20.04/22.04*
 
 * **8+ CPU cores**
 * **16+ GB RAM**
-* **100+ GB SSD (NVMe preferred)**
+* **100+ GB SSD**
 
 ### Wallet & Network
 
