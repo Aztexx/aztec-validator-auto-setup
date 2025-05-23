@@ -17,7 +17,7 @@ AZTEC_DIR="$HOME/aztec-sequencer"
 clear
 echo -e "${BLUE}${BOLD}"
 echo "╔══════════════════════════════════════════════════════════════╗"
-echo "║                  🚀  AZTEC NODE TOOL                         "
+echo "║      🚀🚀🚀🚀🚀🚀  AZTEC NODE TOOL  🚀🚀🚀🚀🚀🚀        "
 echo "╚══════════════════════════════════════════════════════════════╝"
 echo -e "${RESET}"
 
@@ -45,7 +45,7 @@ elif [[ "$CHOICE" == "2" ]]; then
 fi
 
 # --- Option 1: Full Install ---
-IMAGE_TAG="0.85.0-alpha-testnet.11"
+IMAGE_TAG="alpha-testnet"
 SERVER_IP=$(curl -s https://ipinfo.io/ip || echo "127.0.0.1")
 echo -e "📱 ${YELLOW}Detected server IP: ${GREEN}${BOLD}$SERVER_IP${RESET}"
 read -p "🌐 Use this IP? (y/n): " use_detected_ip
@@ -103,9 +103,9 @@ services:
     entrypoint: >
       sh -c 'node --no-warnings /usr/src/yarn-project/aztec/dest/bin/index.js start --network alpha-testnet --node --archiver --sequencer'
        ports:
-      - $TCP_UDP_PORT:50500/tcp
-      - $TCP_UDP_PORT:50500/udp
-      - $HTTP_PORT:9090
+      - $TCP_UDP_PORT:40400/tcp
+      - $TCP_UDP_PORT:40400/udp
+      - $HTTP_PORT:8080
     volumes:
       - /home/my-node/node:/data
     restart: unless-stopped
